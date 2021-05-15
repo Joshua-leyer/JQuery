@@ -1,5 +1,17 @@
 # JQuery
 
+# jquery 获取不存在的dom log会出现的
+
+用jq获取一个不存在的dom ,
+    console.log($(".one"))
+    log: 
+        // S.fn.init(0)
+因为jquery默认获取任意一个元素都是放在数组里.所以这样会输出一个空数组.
+
+所以debug时候这样,更清晰一些, 
+console.log($(".one")[0])
+
+
 
 # jQuery 插件
 
@@ -139,8 +151,10 @@ obj2 会对obj1里面重复的内容覆盖. 没有obj1中的内容就保留。
 ```
 
 
+- 测试overflow:auto; 有滚动条的元素。的子元素的距离高度的属性值
+ul 是一个定死了高度, 设定了overflow:auto的dom元素
 
-
+$("li").offset()  是相对于ul元素的 最顶部高度距离.
 
 
 
