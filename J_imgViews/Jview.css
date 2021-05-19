@@ -1,0 +1,52 @@
+
+/*
+  用的时候请删掉这里
+*/
+body {
+  height: 3000px;
+}
+
+
+#Jox {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#Jox img {
+  position: absolute;
+  max-width: 50vw;
+  height: auto;
+  max-height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1%;
+}
+
+@media only screen and (max-width : 768px) {
+    /* 解决页面左右溢出 */
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    #toggle{
+      width: 100%;
+    }
+    #Jox img {
+      max-width: 80vw;
+    }
+}

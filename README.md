@@ -1,6 +1,15 @@
-# JQuery
+# Jquery
 
-# jquery 获取不存在的dom log会出现的
+# Joshua's plugi
+
+J_imgViews / 点击图片查看的功能
+
+## 别人的模板系列
+
+jquery.stickUp  是一个跟踪的横向动态导航
+
+
+## jquery 获取不存在的dom log会出现的
 
 用jq获取一个不存在的dom ,
     console.log($(".one"))
@@ -13,7 +22,7 @@ console.log($(".one")[0])
 
 
 
-# jQuery 插件
+# jquery 插件
 
 ## other home 
 
@@ -29,12 +38,9 @@ $.fn.greenify = function() {
  
 $( "a" ).greenify(); // 使得所有链接颜色为绿色。
 
-
-
-
 ```
 
-jquery 所有的操作都可以.click()...去使用.  
+jquery 所有的操作都可以.click()...去使用  .来操作  
 
 通过$.fn.myFun = function() {} 的方式添加.
 
@@ -43,7 +49,7 @@ jquery 所有的操作都可以.click()...去使用.
 对jQuery.prototype进得扩展，就是为jQuery类添加“成员函数”。
 
 ```js
-看的一个文章说这种匿名立即函数的操作把变量私有化.
+看的一个文章说这种匿名立即函数的操作把变量私有化,看不明白这种操作
 
 (function ( $ ) {
     $.fn.greenify = function() {
